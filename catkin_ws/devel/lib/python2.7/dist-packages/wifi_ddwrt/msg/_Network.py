@@ -6,20 +6,19 @@ import struct
 
 
 class Network(genpy.Message):
-  _md5sum = "cbd4630ce96fafe4e30405354c4f82d3"
+  _md5sum = "b0854419660dc197dd94305843bee07f"
   _type = "wifi_ddwrt/Network"
   _has_header = False #flag to mark the presence of a Header object
   _full_text = """string macattr
 string essid
-string frequency
 int32 channel
 int32 rssi
 int32 noise
 int32 beacon
 
 """
-  __slots__ = ['macattr','essid','frequency','channel','rssi','noise','beacon']
-  _slot_types = ['string','string','string','int32','int32','int32','int32']
+  __slots__ = ['macattr','essid','channel','rssi','noise','beacon']
+  _slot_types = ['string','string','int32','int32','int32','int32']
 
   def __init__(self, *args, **kwds):
     """
@@ -29,7 +28,7 @@ int32 beacon
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       macattr,essid,frequency,channel,rssi,noise,beacon
+       macattr,essid,channel,rssi,noise,beacon
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -42,8 +41,6 @@ int32 beacon
         self.macattr = ''
       if self.essid is None:
         self.essid = ''
-      if self.frequency is None:
-        self.frequency = ''
       if self.channel is None:
         self.channel = 0
       if self.rssi is None:
@@ -55,7 +52,6 @@ int32 beacon
     else:
       self.macattr = ''
       self.essid = ''
-      self.frequency = ''
       self.channel = 0
       self.rssi = 0
       self.noise = 0
@@ -80,12 +76,6 @@ int32 beacon
         length = len(_x)
       buff.write(struct.pack('<I%ss'%length, length, _x))
       _x = self.essid
-      length = len(_x)
-      if python3 or type(_x) == unicode:
-        _x = _x.encode('utf-8')
-        length = len(_x)
-      buff.write(struct.pack('<I%ss'%length, length, _x))
-      _x = self.frequency
       length = len(_x)
       if python3 or type(_x) == unicode:
         _x = _x.encode('utf-8')
@@ -121,15 +111,6 @@ int32 beacon
         self.essid = str[start:end].decode('utf-8')
       else:
         self.essid = str[start:end]
-      start = end
-      end += 4
-      (length,) = _struct_I.unpack(str[start:end])
-      start = end
-      end += length
-      if python3:
-        self.frequency = str[start:end].decode('utf-8')
-      else:
-        self.frequency = str[start:end]
       _x = self
       start = end
       end += 16
@@ -153,12 +134,6 @@ int32 beacon
         length = len(_x)
       buff.write(struct.pack('<I%ss'%length, length, _x))
       _x = self.essid
-      length = len(_x)
-      if python3 or type(_x) == unicode:
-        _x = _x.encode('utf-8')
-        length = len(_x)
-      buff.write(struct.pack('<I%ss'%length, length, _x))
-      _x = self.frequency
       length = len(_x)
       if python3 or type(_x) == unicode:
         _x = _x.encode('utf-8')
@@ -195,15 +170,6 @@ int32 beacon
         self.essid = str[start:end].decode('utf-8')
       else:
         self.essid = str[start:end]
-      start = end
-      end += 4
-      (length,) = _struct_I.unpack(str[start:end])
-      start = end
-      end += length
-      if python3:
-        self.frequency = str[start:end].decode('utf-8')
-      else:
-        self.frequency = str[start:end]
       _x = self
       start = end
       end += 16

@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mig-ly/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/mig-ly/git/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mig-ly/catkin_ws/build
+CMAKE_BINARY_DIR = /home/mig-ly/git/catkin_ws/build
 
 # Utility rule file for std_msgs_generate_messages_cpp.
 
@@ -53,10 +53,10 @@ wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_cpp.dir/build: std_msgs_generat
 .PHONY : wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 
 wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	cd /home/mig-ly/catkin_ws/build/wifi_ddwrt && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/mig-ly/git/catkin_ws/build/wifi_ddwrt && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 
 wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend:
-	cd /home/mig-ly/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mig-ly/catkin_ws/src /home/mig-ly/catkin_ws/src/wifi_ddwrt /home/mig-ly/catkin_ws/build /home/mig-ly/catkin_ws/build/wifi_ddwrt /home/mig-ly/catkin_ws/build/wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mig-ly/git/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mig-ly/git/catkin_ws/src /home/mig-ly/git/catkin_ws/src/wifi_ddwrt /home/mig-ly/git/catkin_ws/build /home/mig-ly/git/catkin_ws/build/wifi_ddwrt /home/mig-ly/git/catkin_ws/build/wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
 

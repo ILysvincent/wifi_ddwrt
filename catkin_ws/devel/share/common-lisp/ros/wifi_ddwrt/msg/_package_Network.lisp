@@ -3,8 +3,6 @@
           MACATTR
           ESSID-VAL
           ESSID
-          FREQUENCY-VAL
-          FREQUENCY
           CHANNEL-VAL
           CHANNEL
           RSSI-VAL

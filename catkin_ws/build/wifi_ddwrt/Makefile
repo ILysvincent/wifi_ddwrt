@@ -36,10 +36,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mig-ly/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/mig-ly/git/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mig-ly/catkin_ws/build
+CMAKE_BINARY_DIR = /home/mig-ly/git/catkin_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -117,14 +117,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/mig-ly/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mig-ly/catkin_ws/build/CMakeFiles /home/mig-ly/catkin_ws/build/wifi_ddwrt/CMakeFiles/progress.marks
-	cd /home/mig-ly/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mig-ly/catkin_ws/build/CMakeFiles 0
+	cd /home/mig-ly/git/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mig-ly/git/catkin_ws/build/CMakeFiles /home/mig-ly/git/catkin_ws/build/wifi_ddwrt/CMakeFiles/progress.marks
+	cd /home/mig-ly/git/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mig-ly/git/catkin_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/mig-ly/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/clean
+	cd /home/mig-ly/git/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/clean
 .PHONY : clean
 
 # The main clean target
@@ -133,22 +133,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/mig-ly/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/preinstall
+	cd /home/mig-ly/git/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/mig-ly/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/preinstall
+	cd /home/mig-ly/git/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/mig-ly/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/mig-ly/git/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/mig-ly/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+	cd /home/mig-ly/git/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -157,12 +157,12 @@ std_msgs_generate_messages_cpp: wifi_ddwrt/CMakeFiles/std_msgs_generate_messages
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	cd /home/mig-ly/catkin_ws/build && $(MAKE) -f wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	cd /home/mig-ly/git/catkin_ws/build && $(MAKE) -f wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/mig-ly/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+	cd /home/mig-ly/git/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 .PHONY : wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -171,12 +171,12 @@ std_msgs_generate_messages_lisp: wifi_ddwrt/CMakeFiles/std_msgs_generate_message
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	cd /home/mig-ly/catkin_ws/build && $(MAKE) -f wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	cd /home/mig-ly/git/catkin_ws/build && $(MAKE) -f wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/mig-ly/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+	cd /home/mig-ly/git/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 .PHONY : wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -185,12 +185,12 @@ std_msgs_generate_messages_py: wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	cd /home/mig-ly/catkin_ws/build && $(MAKE) -f wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_py.dir/build.make wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	cd /home/mig-ly/git/catkin_ws/build && $(MAKE) -f wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_py.dir/build.make wifi_ddwrt/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 wifi_ddwrt/CMakeFiles/wifi_ddwrt_gencpp.dir/rule:
-	cd /home/mig-ly/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/CMakeFiles/wifi_ddwrt_gencpp.dir/rule
+	cd /home/mig-ly/git/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/CMakeFiles/wifi_ddwrt_gencpp.dir/rule
 .PHONY : wifi_ddwrt/CMakeFiles/wifi_ddwrt_gencpp.dir/rule
 
 # Convenience name for target.
@@ -199,12 +199,12 @@ wifi_ddwrt_gencpp: wifi_ddwrt/CMakeFiles/wifi_ddwrt_gencpp.dir/rule
 
 # fast build rule for target.
 wifi_ddwrt_gencpp/fast:
-	cd /home/mig-ly/catkin_ws/build && $(MAKE) -f wifi_ddwrt/CMakeFiles/wifi_ddwrt_gencpp.dir/build.make wifi_ddwrt/CMakeFiles/wifi_ddwrt_gencpp.dir/build
+	cd /home/mig-ly/git/catkin_ws/build && $(MAKE) -f wifi_ddwrt/CMakeFiles/wifi_ddwrt_gencpp.dir/build.make wifi_ddwrt/CMakeFiles/wifi_ddwrt_gencpp.dir/build
 .PHONY : wifi_ddwrt_gencpp/fast
 
 # Convenience name for target.
 wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages.dir/rule:
-	cd /home/mig-ly/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages.dir/rule
+	cd /home/mig-ly/git/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages.dir/rule
 .PHONY : wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -213,12 +213,12 @@ wifi_ddwrt_generate_messages: wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages
 
 # fast build rule for target.
 wifi_ddwrt_generate_messages/fast:
-	cd /home/mig-ly/catkin_ws/build && $(MAKE) -f wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages.dir/build.make wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages.dir/build
+	cd /home/mig-ly/git/catkin_ws/build && $(MAKE) -f wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages.dir/build.make wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages.dir/build
 .PHONY : wifi_ddwrt_generate_messages/fast
 
 # Convenience name for target.
 wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_cpp.dir/rule:
-	cd /home/mig-ly/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_cpp.dir/rule
+	cd /home/mig-ly/git/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_cpp.dir/rule
 .PHONY : wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -227,12 +227,12 @@ wifi_ddwrt_generate_messages_cpp: wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_mess
 
 # fast build rule for target.
 wifi_ddwrt_generate_messages_cpp/fast:
-	cd /home/mig-ly/catkin_ws/build && $(MAKE) -f wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_cpp.dir/build.make wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_cpp.dir/build
+	cd /home/mig-ly/git/catkin_ws/build && $(MAKE) -f wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_cpp.dir/build.make wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_cpp.dir/build
 .PHONY : wifi_ddwrt_generate_messages_cpp/fast
 
 # Convenience name for target.
 wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_lisp.dir/rule:
-	cd /home/mig-ly/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_lisp.dir/rule
+	cd /home/mig-ly/git/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_lisp.dir/rule
 .PHONY : wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -241,12 +241,12 @@ wifi_ddwrt_generate_messages_lisp: wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_mes
 
 # fast build rule for target.
 wifi_ddwrt_generate_messages_lisp/fast:
-	cd /home/mig-ly/catkin_ws/build && $(MAKE) -f wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_lisp.dir/build.make wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_lisp.dir/build
+	cd /home/mig-ly/git/catkin_ws/build && $(MAKE) -f wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_lisp.dir/build.make wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_lisp.dir/build
 .PHONY : wifi_ddwrt_generate_messages_lisp/fast
 
 # Convenience name for target.
 wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_py.dir/rule:
-	cd /home/mig-ly/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_py.dir/rule
+	cd /home/mig-ly/git/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_py.dir/rule
 .PHONY : wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -255,12 +255,12 @@ wifi_ddwrt_generate_messages_py: wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messa
 
 # fast build rule for target.
 wifi_ddwrt_generate_messages_py/fast:
-	cd /home/mig-ly/catkin_ws/build && $(MAKE) -f wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_py.dir/build.make wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_py.dir/build
+	cd /home/mig-ly/git/catkin_ws/build && $(MAKE) -f wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_py.dir/build.make wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_py.dir/build
 .PHONY : wifi_ddwrt_generate_messages_py/fast
 
 # Convenience name for target.
 wifi_ddwrt/CMakeFiles/wifi_ddwrt_genlisp.dir/rule:
-	cd /home/mig-ly/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/CMakeFiles/wifi_ddwrt_genlisp.dir/rule
+	cd /home/mig-ly/git/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/CMakeFiles/wifi_ddwrt_genlisp.dir/rule
 .PHONY : wifi_ddwrt/CMakeFiles/wifi_ddwrt_genlisp.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ wifi_ddwrt_genlisp: wifi_ddwrt/CMakeFiles/wifi_ddwrt_genlisp.dir/rule
 
 # fast build rule for target.
 wifi_ddwrt_genlisp/fast:
-	cd /home/mig-ly/catkin_ws/build && $(MAKE) -f wifi_ddwrt/CMakeFiles/wifi_ddwrt_genlisp.dir/build.make wifi_ddwrt/CMakeFiles/wifi_ddwrt_genlisp.dir/build
+	cd /home/mig-ly/git/catkin_ws/build && $(MAKE) -f wifi_ddwrt/CMakeFiles/wifi_ddwrt_genlisp.dir/build.make wifi_ddwrt/CMakeFiles/wifi_ddwrt_genlisp.dir/build
 .PHONY : wifi_ddwrt_genlisp/fast
 
 # Convenience name for target.
 wifi_ddwrt/CMakeFiles/wifi_ddwrt_genpy.dir/rule:
-	cd /home/mig-ly/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/CMakeFiles/wifi_ddwrt_genpy.dir/rule
+	cd /home/mig-ly/git/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 wifi_ddwrt/CMakeFiles/wifi_ddwrt_genpy.dir/rule
 .PHONY : wifi_ddwrt/CMakeFiles/wifi_ddwrt_genpy.dir/rule
 
 # Convenience name for target.
@@ -283,7 +283,7 @@ wifi_ddwrt_genpy: wifi_ddwrt/CMakeFiles/wifi_ddwrt_genpy.dir/rule
 
 # fast build rule for target.
 wifi_ddwrt_genpy/fast:
-	cd /home/mig-ly/catkin_ws/build && $(MAKE) -f wifi_ddwrt/CMakeFiles/wifi_ddwrt_genpy.dir/build.make wifi_ddwrt/CMakeFiles/wifi_ddwrt_genpy.dir/build
+	cd /home/mig-ly/git/catkin_ws/build && $(MAKE) -f wifi_ddwrt/CMakeFiles/wifi_ddwrt_genpy.dir/build.make wifi_ddwrt/CMakeFiles/wifi_ddwrt_genpy.dir/build
 .PHONY : wifi_ddwrt_genpy/fast
 
 # Help Target
@@ -320,6 +320,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/mig-ly/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/mig-ly/git/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

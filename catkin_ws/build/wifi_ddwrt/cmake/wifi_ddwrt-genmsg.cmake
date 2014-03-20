@@ -1,8 +1,8 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "wifi_ddwrt: 3 messages, 0 services")
+message(STATUS "wifi_ddwrt: 2 messages, 0 services")
 
-set(MSG_I_FLAGS "-Iwifi_ddwrt:/home/mig-ly/catkin_ws/src/wifi_ddwrt/msg;-Istd_msgs:/opt/ros/groovy/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Iwifi_ddwrt:/home/mig-ly/git/catkin_ws/src/wifi_ddwrt/msg;-Istd_msgs:/opt/ros/groovy/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -18,19 +18,13 @@ add_custom_target(wifi_ddwrt_generate_messages ALL)
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(wifi_ddwrt
-  "/home/mig-ly/catkin_ws/src/wifi_ddwrt/msg/SiteSurvey.msg"
+  "/home/mig-ly/git/catkin_ws/src/wifi_ddwrt/msg/SiteSurvey.msg"
   "${MSG_I_FLAGS}"
-  "/home/mig-ly/catkin_ws/src/wifi_ddwrt/msg/Network.msg;/opt/ros/groovy/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/mig-ly/git/catkin_ws/src/wifi_ddwrt/msg/Network.msg;/opt/ros/groovy/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/wifi_ddwrt
 )
 _generate_msg_cpp(wifi_ddwrt
-  "/home/mig-ly/catkin_ws/src/wifi_ddwrt/msg/AccessPoint.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/groovy/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/wifi_ddwrt
-)
-_generate_msg_cpp(wifi_ddwrt
-  "/home/mig-ly/catkin_ws/src/wifi_ddwrt/msg/Network.msg"
+  "/home/mig-ly/git/catkin_ws/src/wifi_ddwrt/msg/Network.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/wifi_ddwrt
@@ -59,19 +53,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS wifi_ddwrt_generate_messages_cpp)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(wifi_ddwrt
-  "/home/mig-ly/catkin_ws/src/wifi_ddwrt/msg/SiteSurvey.msg"
+  "/home/mig-ly/git/catkin_ws/src/wifi_ddwrt/msg/SiteSurvey.msg"
   "${MSG_I_FLAGS}"
-  "/home/mig-ly/catkin_ws/src/wifi_ddwrt/msg/Network.msg;/opt/ros/groovy/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/mig-ly/git/catkin_ws/src/wifi_ddwrt/msg/Network.msg;/opt/ros/groovy/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/wifi_ddwrt
 )
 _generate_msg_lisp(wifi_ddwrt
-  "/home/mig-ly/catkin_ws/src/wifi_ddwrt/msg/AccessPoint.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/groovy/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/wifi_ddwrt
-)
-_generate_msg_lisp(wifi_ddwrt
-  "/home/mig-ly/catkin_ws/src/wifi_ddwrt/msg/Network.msg"
+  "/home/mig-ly/git/catkin_ws/src/wifi_ddwrt/msg/Network.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/wifi_ddwrt
@@ -100,19 +88,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS wifi_ddwrt_generate_messages_lisp)
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(wifi_ddwrt
-  "/home/mig-ly/catkin_ws/src/wifi_ddwrt/msg/SiteSurvey.msg"
+  "/home/mig-ly/git/catkin_ws/src/wifi_ddwrt/msg/SiteSurvey.msg"
   "${MSG_I_FLAGS}"
-  "/home/mig-ly/catkin_ws/src/wifi_ddwrt/msg/Network.msg;/opt/ros/groovy/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/mig-ly/git/catkin_ws/src/wifi_ddwrt/msg/Network.msg;/opt/ros/groovy/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/wifi_ddwrt
 )
 _generate_msg_py(wifi_ddwrt
-  "/home/mig-ly/catkin_ws/src/wifi_ddwrt/msg/AccessPoint.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/groovy/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/wifi_ddwrt
-)
-_generate_msg_py(wifi_ddwrt
-  "/home/mig-ly/catkin_ws/src/wifi_ddwrt/msg/Network.msg"
+  "/home/mig-ly/git/catkin_ws/src/wifi_ddwrt/msg/Network.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/wifi_ddwrt

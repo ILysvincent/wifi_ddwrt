@@ -5,7 +5,5 @@
    "SITESURVEY"
    "<NETWORK>"
    "NETWORK"
-   "<ACCESSPOINT>"
-   "ACCESSPOINT"
   ))
 

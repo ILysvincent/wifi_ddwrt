@@ -17,11 +17,6 @@
     :initarg :essid
     :type cl:string
     :initform "")
-   (frequency
-    :reader frequency
-    :initarg :frequency
-    :type cl:string
-    :initform "")
    (channel
     :reader channel
     :initarg :channel
@@ -62,11 +57,6 @@
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader wifi_ddwrt-msg:essid-val is deprecated.  Use wifi_ddwrt-msg:essid instead.")
   (essid m))
 
-(cl:ensure-generic-function 'frequency-val :lambda-list '(m))
-(cl:defmethod frequency-val ((m <Network>))
-  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader wifi_ddwrt-msg:frequency-val is deprecated.  Use wifi_ddwrt-msg:frequency instead.")
-  (frequency m))
-
 (cl:ensure-generic-function 'channel-val :lambda-list '(m))
 (cl:defmethod channel-val ((m <Network>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader wifi_ddwrt-msg:channel-val is deprecated.  Use wifi_ddwrt-msg:channel instead.")
@@ -100,12 +90,6 @@
     (cl:write-byte (cl:ldb (cl:byte 8 16) __ros_str_len) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 24) __ros_str_len) ostream))
   (cl:map cl:nil #'(cl:lambda (c) (cl:write-byte (cl:char-code c) ostream)) (cl:slot-value msg 'essid))
-  (cl:let ((__ros_str_len (cl:length (cl:slot-value msg 'frequency))))
-    (cl:write-byte (cl:ldb (cl:byte 8 0) __ros_str_len) ostream)
-    (cl:write-byte (cl:ldb (cl:byte 8 8) __ros_str_len) ostream)
-    (cl:write-byte (cl:ldb (cl:byte 8 16) __ros_str_len) ostream)
-    (cl:write-byte (cl:ldb (cl:byte 8 24) __ros_str_len) ostream))
-  (cl:map cl:nil #'(cl:lambda (c) (cl:write-byte (cl:char-code c) ostream)) (cl:slot-value msg 'frequency))
   (cl:let* ((signed (cl:slot-value msg 'channel)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 4294967296) signed)))
     (cl:write-byte (cl:ldb (cl:byte 8 0) unsigned) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 8) unsigned) ostream)
@@ -149,14 +133,6 @@
       (cl:setf (cl:slot-value msg 'essid) (cl:make-string __ros_str_len))
       (cl:dotimes (__ros_str_idx __ros_str_len msg)
         (cl:setf (cl:char (cl:slot-value msg 'essid) __ros_str_idx) (cl:code-char (cl:read-byte istream)))))
-    (cl:let ((__ros_str_len 0))
-      (cl:setf (cl:ldb (cl:byte 8 0) __ros_str_len) (cl:read-byte istream))
-      (cl:setf (cl:ldb (cl:byte 8 8) __ros_str_len) (cl:read-byte istream))
-      (cl:setf (cl:ldb (cl:byte 8 16) __ros_str_len) (cl:read-byte istream))
-      (cl:setf (cl:ldb (cl:byte 8 24) __ros_str_len) (cl:read-byte istream))
-      (cl:setf (cl:slot-value msg 'frequency) (cl:make-string __ros_str_len))
-      (cl:dotimes (__ros_str_idx __ros_str_len msg)
-        (cl:setf (cl:char (cl:slot-value msg 'frequency) __ros_str_idx) (cl:code-char (cl:read-byte istream)))))
     (cl:let ((unsigned 0))
       (cl:setf (cl:ldb (cl:byte 8 0) unsigned) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 8) unsigned) (cl:read-byte istream))
@@ -191,21 +167,20 @@
   "wifi_ddwrt/Network")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<Network>)))
   "Returns md5sum for a message object of type '<Network>"
-  "cbd4630ce96fafe4e30405354c4f82d3")
+  "b0854419660dc197dd94305843bee07f")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'Network)))
   "Returns md5sum for a message object of type 'Network"
-  "cbd4630ce96fafe4e30405354c4f82d3")
+  "b0854419660dc197dd94305843bee07f")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<Network>)))
   "Returns full string definition for message of type '<Network>"
-  (cl:format cl:nil "string macattr~%string essid~%string frequency~%int32 channel~%int32 rssi~%int32 noise~%int32 beacon~%~%~%"))
+  (cl:format cl:nil "string macattr~%string essid~%int32 channel~%int32 rssi~%int32 noise~%int32 beacon~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'Network)))
   "Returns full string definition for message of type 'Network"
-  (cl:format cl:nil "string macattr~%string essid~%string frequency~%int32 channel~%int32 rssi~%int32 noise~%int32 beacon~%~%~%"))
+  (cl:format cl:nil "string macattr~%string essid~%int32 channel~%int32 rssi~%int32 noise~%int32 beacon~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <Network>))
   (cl:+ 0
      4 (cl:length (cl:slot-value msg 'macattr))
      4 (cl:length (cl:slot-value msg 'essid))
-     4 (cl:length (cl:slot-value msg 'frequency))
      4
      4
      4
@@ -216,7 +191,6 @@
   (cl:list 'Network
     (cl:cons ':macattr (macattr msg))
     (cl:cons ':essid (essid msg))
-    (cl:cons ':frequency (frequency msg))
     (cl:cons ':channel (channel msg))
     (cl:cons ':rssi (rssi msg))
     (cl:cons ':noise (noise msg))

@@ -8,7 +8,7 @@ import wifi_ddwrt.msg
 import std_msgs.msg
 
 class SiteSurvey(genpy.Message):
-  _md5sum = "7a9369e0f41901a8cb5cff5e65bc4a5c"
+  _md5sum = "f1063b16bb121ef190ae5edfe09d94ec"
   _type = "wifi_ddwrt/SiteSurvey"
   _has_header = True #flag to mark the presence of a Header object
   _full_text = """Header header
@@ -36,7 +36,6 @@ string frame_id
 MSG: wifi_ddwrt/Network
 string macattr
 string essid
-string frequency
 int32 channel
 int32 rssi
 int32 noise
@@ -106,12 +105,6 @@ int32 beacon
           _x = _x.encode('utf-8')
           length = len(_x)
         buff.write(struct.pack('<I%ss'%length, length, _x))
-        _x = val1.frequency
-        length = len(_x)
-        if python3 or type(_x) == unicode:
-          _x = _x.encode('utf-8')
-          length = len(_x)
-        buff.write(struct.pack('<I%ss'%length, length, _x))
         _x = val1
         buff.write(_struct_4i.pack(_x.channel, _x.rssi, _x.noise, _x.beacon))
     except struct.error as se: self._check_types(se)
@@ -165,15 +158,6 @@ int32 beacon
           val1.essid = str[start:end].decode('utf-8')
         else:
           val1.essid = str[start:end]
-        start = end
-        end += 4
-        (length,) = _struct_I.unpack(str[start:end])
-        start = end
-        end += length
-        if python3:
-          val1.frequency = str[start:end].decode('utf-8')
-        else:
-          val1.frequency = str[start:end]
         _x = val1
         start = end
         end += 16
@@ -209,12 +193,6 @@ int32 beacon
           length = len(_x)
         buff.write(struct.pack('<I%ss'%length, length, _x))
         _x = val1.essid
-        length = len(_x)
-        if python3 or type(_x) == unicode:
-          _x = _x.encode('utf-8')
-          length = len(_x)
-        buff.write(struct.pack('<I%ss'%length, length, _x))
-        _x = val1.frequency
         length = len(_x)
         if python3 or type(_x) == unicode:
           _x = _x.encode('utf-8')
@@ -274,15 +252,6 @@ int32 beacon
           val1.essid = str[start:end].decode('utf-8')
         else:
           val1.essid = str[start:end]
-        start = end
-        end += 4
-        (length,) = _struct_I.unpack(str[start:end])
-        start = end
-        end += length
-        if python3:
-          val1.frequency = str[start:end].decode('utf-8')
-        else:
-          val1.frequency = str[start:end]
         _x = val1
         start = end
         end += 16

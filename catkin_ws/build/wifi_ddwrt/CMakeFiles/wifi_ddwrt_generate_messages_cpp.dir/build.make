@@ -32,48 +32,38 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mig-ly/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/mig-ly/git/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mig-ly/catkin_ws/build
+CMAKE_BINARY_DIR = /home/mig-ly/git/catkin_ws/build
 
 # Utility rule file for wifi_ddwrt_generate_messages_cpp.
 
 # Include the progress variables for this target.
 include wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_cpp.dir/progress.make
 
-wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_cpp: /home/mig-ly/catkin_ws/devel/include/wifi_ddwrt/SiteSurvey.h
-wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_cpp: /home/mig-ly/catkin_ws/devel/include/wifi_ddwrt/AccessPoint.h
-wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_cpp: /home/mig-ly/catkin_ws/devel/include/wifi_ddwrt/Network.h
+wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_cpp: /home/mig-ly/git/catkin_ws/devel/include/wifi_ddwrt/SiteSurvey.h
+wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_cpp: /home/mig-ly/git/catkin_ws/devel/include/wifi_ddwrt/Network.h
 
-/home/mig-ly/catkin_ws/devel/include/wifi_ddwrt/SiteSurvey.h: /opt/ros/groovy/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
-/home/mig-ly/catkin_ws/devel/include/wifi_ddwrt/SiteSurvey.h: /home/mig-ly/catkin_ws/src/wifi_ddwrt/msg/SiteSurvey.msg
-/home/mig-ly/catkin_ws/devel/include/wifi_ddwrt/SiteSurvey.h: /home/mig-ly/catkin_ws/src/wifi_ddwrt/msg/Network.msg
-/home/mig-ly/catkin_ws/devel/include/wifi_ddwrt/SiteSurvey.h: /opt/ros/groovy/share/std_msgs/cmake/../msg/Header.msg
-/home/mig-ly/catkin_ws/devel/include/wifi_ddwrt/SiteSurvey.h: /opt/ros/groovy/share/gencpp/cmake/../msg.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mig-ly/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
+/home/mig-ly/git/catkin_ws/devel/include/wifi_ddwrt/SiteSurvey.h: /opt/ros/groovy/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/mig-ly/git/catkin_ws/devel/include/wifi_ddwrt/SiteSurvey.h: /home/mig-ly/git/catkin_ws/src/wifi_ddwrt/msg/SiteSurvey.msg
+/home/mig-ly/git/catkin_ws/devel/include/wifi_ddwrt/SiteSurvey.h: /home/mig-ly/git/catkin_ws/src/wifi_ddwrt/msg/Network.msg
+/home/mig-ly/git/catkin_ws/devel/include/wifi_ddwrt/SiteSurvey.h: /opt/ros/groovy/share/std_msgs/cmake/../msg/Header.msg
+/home/mig-ly/git/catkin_ws/devel/include/wifi_ddwrt/SiteSurvey.h: /opt/ros/groovy/share/gencpp/cmake/../msg.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mig-ly/git/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from wifi_ddwrt/SiteSurvey.msg"
-	cd /home/mig-ly/catkin_ws/build/wifi_ddwrt && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/groovy/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/mig-ly/catkin_ws/src/wifi_ddwrt/msg/SiteSurvey.msg -Iwifi_ddwrt:/home/mig-ly/catkin_ws/src/wifi_ddwrt/msg -Istd_msgs:/opt/ros/groovy/share/std_msgs/cmake/../msg -p wifi_ddwrt -o /home/mig-ly/catkin_ws/devel/include/wifi_ddwrt -e /opt/ros/groovy/share/gencpp/cmake/..
+	cd /home/mig-ly/git/catkin_ws/build/wifi_ddwrt && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/groovy/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/mig-ly/git/catkin_ws/src/wifi_ddwrt/msg/SiteSurvey.msg -Iwifi_ddwrt:/home/mig-ly/git/catkin_ws/src/wifi_ddwrt/msg -Istd_msgs:/opt/ros/groovy/share/std_msgs/cmake/../msg -p wifi_ddwrt -o /home/mig-ly/git/catkin_ws/devel/include/wifi_ddwrt -e /opt/ros/groovy/share/gencpp/cmake/..
 
-/home/mig-ly/catkin_ws/devel/include/wifi_ddwrt/AccessPoint.h: /opt/ros/groovy/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
-/home/mig-ly/catkin_ws/devel/include/wifi_ddwrt/AccessPoint.h: /home/mig-ly/catkin_ws/src/wifi_ddwrt/msg/AccessPoint.msg
-/home/mig-ly/catkin_ws/devel/include/wifi_ddwrt/AccessPoint.h: /opt/ros/groovy/share/std_msgs/cmake/../msg/Header.msg
-/home/mig-ly/catkin_ws/devel/include/wifi_ddwrt/AccessPoint.h: /opt/ros/groovy/share/gencpp/cmake/../msg.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mig-ly/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from wifi_ddwrt/AccessPoint.msg"
-	cd /home/mig-ly/catkin_ws/build/wifi_ddwrt && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/groovy/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/mig-ly/catkin_ws/src/wifi_ddwrt/msg/AccessPoint.msg -Iwifi_ddwrt:/home/mig-ly/catkin_ws/src/wifi_ddwrt/msg -Istd_msgs:/opt/ros/groovy/share/std_msgs/cmake/../msg -p wifi_ddwrt -o /home/mig-ly/catkin_ws/devel/include/wifi_ddwrt -e /opt/ros/groovy/share/gencpp/cmake/..
-
-/home/mig-ly/catkin_ws/devel/include/wifi_ddwrt/Network.h: /opt/ros/groovy/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
-/home/mig-ly/catkin_ws/devel/include/wifi_ddwrt/Network.h: /home/mig-ly/catkin_ws/src/wifi_ddwrt/msg/Network.msg
-/home/mig-ly/catkin_ws/devel/include/wifi_ddwrt/Network.h: /opt/ros/groovy/share/gencpp/cmake/../msg.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mig-ly/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
+/home/mig-ly/git/catkin_ws/devel/include/wifi_ddwrt/Network.h: /opt/ros/groovy/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/mig-ly/git/catkin_ws/devel/include/wifi_ddwrt/Network.h: /home/mig-ly/git/catkin_ws/src/wifi_ddwrt/msg/Network.msg
+/home/mig-ly/git/catkin_ws/devel/include/wifi_ddwrt/Network.h: /opt/ros/groovy/share/gencpp/cmake/../msg.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mig-ly/git/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from wifi_ddwrt/Network.msg"
-	cd /home/mig-ly/catkin_ws/build/wifi_ddwrt && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/groovy/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/mig-ly/catkin_ws/src/wifi_ddwrt/msg/Network.msg -Iwifi_ddwrt:/home/mig-ly/catkin_ws/src/wifi_ddwrt/msg -Istd_msgs:/opt/ros/groovy/share/std_msgs/cmake/../msg -p wifi_ddwrt -o /home/mig-ly/catkin_ws/devel/include/wifi_ddwrt -e /opt/ros/groovy/share/gencpp/cmake/..
+	cd /home/mig-ly/git/catkin_ws/build/wifi_ddwrt && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/groovy/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/mig-ly/git/catkin_ws/src/wifi_ddwrt/msg/Network.msg -Iwifi_ddwrt:/home/mig-ly/git/catkin_ws/src/wifi_ddwrt/msg -Istd_msgs:/opt/ros/groovy/share/std_msgs/cmake/../msg -p wifi_ddwrt -o /home/mig-ly/git/catkin_ws/devel/include/wifi_ddwrt -e /opt/ros/groovy/share/gencpp/cmake/..
 
 wifi_ddwrt_generate_messages_cpp: wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_cpp
-wifi_ddwrt_generate_messages_cpp: /home/mig-ly/catkin_ws/devel/include/wifi_ddwrt/SiteSurvey.h
-wifi_ddwrt_generate_messages_cpp: /home/mig-ly/catkin_ws/devel/include/wifi_ddwrt/AccessPoint.h
-wifi_ddwrt_generate_messages_cpp: /home/mig-ly/catkin_ws/devel/include/wifi_ddwrt/Network.h
+wifi_ddwrt_generate_messages_cpp: /home/mig-ly/git/catkin_ws/devel/include/wifi_ddwrt/SiteSurvey.h
+wifi_ddwrt_generate_messages_cpp: /home/mig-ly/git/catkin_ws/devel/include/wifi_ddwrt/Network.h
 wifi_ddwrt_generate_messages_cpp: wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_cpp.dir/build.make
 .PHONY : wifi_ddwrt_generate_messages_cpp
 
@@ -82,10 +72,10 @@ wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_cpp.dir/build: wifi_ddwrt_gen
 .PHONY : wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_cpp.dir/build
 
 wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_cpp.dir/clean:
-	cd /home/mig-ly/catkin_ws/build/wifi_ddwrt && $(CMAKE_COMMAND) -P CMakeFiles/wifi_ddwrt_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/mig-ly/git/catkin_ws/build/wifi_ddwrt && $(CMAKE_COMMAND) -P CMakeFiles/wifi_ddwrt_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_cpp.dir/clean
 
 wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_cpp.dir/depend:
-	cd /home/mig-ly/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mig-ly/catkin_ws/src /home/mig-ly/catkin_ws/src/wifi_ddwrt /home/mig-ly/catkin_ws/build /home/mig-ly/catkin_ws/build/wifi_ddwrt /home/mig-ly/catkin_ws/build/wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mig-ly/git/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mig-ly/git/catkin_ws/src /home/mig-ly/git/catkin_ws/src/wifi_ddwrt /home/mig-ly/git/catkin_ws/build /home/mig-ly/git/catkin_ws/build/wifi_ddwrt /home/mig-ly/git/catkin_ws/build/wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : wifi_ddwrt/CMakeFiles/wifi_ddwrt_generate_messages_cpp.dir/depend
 

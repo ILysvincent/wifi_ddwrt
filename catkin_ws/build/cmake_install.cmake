@@ -1,8 +1,8 @@
-# Install script for directory: /home/mig-ly/catkin_ws/src
+# Install script for directory: /home/mig-ly/git/catkin_ws/src
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/mig-ly/catkin_ws/install")
+  SET(CMAKE_INSTALL_PREFIX "/home/mig-ly/git/catkin_ws/install")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,44 +34,44 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CPACK_ABSOLUTE_DESTINATION_FILES
-   "/home/mig-ly/catkin_ws/install/.catkin")
-FILE(INSTALL DESTINATION "/home/mig-ly/catkin_ws/install" TYPE FILE FILES "/home/mig-ly/catkin_ws/build/catkin_generated/installspace/.catkin")
+   "/home/mig-ly/git/catkin_ws/install/.catkin")
+FILE(INSTALL DESTINATION "/home/mig-ly/git/catkin_ws/install" TYPE FILE FILES "/home/mig-ly/git/catkin_ws/build/catkin_generated/installspace/.catkin")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CPACK_ABSOLUTE_DESTINATION_FILES
-   "/home/mig-ly/catkin_ws/install/_setup_util.py")
-FILE(INSTALL DESTINATION "/home/mig-ly/catkin_ws/install" TYPE PROGRAM FILES "/home/mig-ly/catkin_ws/build/catkin_generated/installspace/_setup_util.py")
+   "/home/mig-ly/git/catkin_ws/install/_setup_util.py")
+FILE(INSTALL DESTINATION "/home/mig-ly/git/catkin_ws/install" TYPE PROGRAM FILES "/home/mig-ly/git/catkin_ws/build/catkin_generated/installspace/_setup_util.py")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CPACK_ABSOLUTE_DESTINATION_FILES
-   "/home/mig-ly/catkin_ws/install/env.sh")
-FILE(INSTALL DESTINATION "/home/mig-ly/catkin_ws/install" TYPE PROGRAM FILES "/home/mig-ly/catkin_ws/build/catkin_generated/installspace/env.sh")
+   "/home/mig-ly/git/catkin_ws/install/env.sh")
+FILE(INSTALL DESTINATION "/home/mig-ly/git/catkin_ws/install" TYPE PROGRAM FILES "/home/mig-ly/git/catkin_ws/build/catkin_generated/installspace/env.sh")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CPACK_ABSOLUTE_DESTINATION_FILES
-   "/home/mig-ly/catkin_ws/install/setup.bash")
-FILE(INSTALL DESTINATION "/home/mig-ly/catkin_ws/install" TYPE FILE FILES "/home/mig-ly/catkin_ws/build/catkin_generated/installspace/setup.bash")
+   "/home/mig-ly/git/catkin_ws/install/setup.bash")
+FILE(INSTALL DESTINATION "/home/mig-ly/git/catkin_ws/install" TYPE FILE FILES "/home/mig-ly/git/catkin_ws/build/catkin_generated/installspace/setup.bash")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CPACK_ABSOLUTE_DESTINATION_FILES
-   "/home/mig-ly/catkin_ws/install/setup.sh")
-FILE(INSTALL DESTINATION "/home/mig-ly/catkin_ws/install" TYPE FILE FILES "/home/mig-ly/catkin_ws/build/catkin_generated/installspace/setup.sh")
+   "/home/mig-ly/git/catkin_ws/install/setup.sh")
+FILE(INSTALL DESTINATION "/home/mig-ly/git/catkin_ws/install" TYPE FILE FILES "/home/mig-ly/git/catkin_ws/build/catkin_generated/installspace/setup.sh")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CPACK_ABSOLUTE_DESTINATION_FILES
-   "/home/mig-ly/catkin_ws/install/setup.zsh")
-FILE(INSTALL DESTINATION "/home/mig-ly/catkin_ws/install" TYPE FILE FILES "/home/mig-ly/catkin_ws/build/catkin_generated/installspace/setup.zsh")
+   "/home/mig-ly/git/catkin_ws/install/setup.zsh")
+FILE(INSTALL DESTINATION "/home/mig-ly/git/catkin_ws/install" TYPE FILE FILES "/home/mig-ly/git/catkin_ws/build/catkin_generated/installspace/setup.zsh")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CPACK_ABSOLUTE_DESTINATION_FILES
-   "/home/mig-ly/catkin_ws/install/.rosinstall")
-FILE(INSTALL DESTINATION "/home/mig-ly/catkin_ws/install" TYPE FILE FILES "/home/mig-ly/catkin_ws/build/catkin_generated/installspace/.rosinstall")
+   "/home/mig-ly/git/catkin_ws/install/.rosinstall")
+FILE(INSTALL DESTINATION "/home/mig-ly/git/catkin_ws/install" TYPE FILE FILES "/home/mig-ly/git/catkin_ws/build/catkin_generated/installspace/.rosinstall")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -84,8 +84,8 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/home/mig-ly/catkin_ws/build/gtest/cmake_install.cmake")
-  INCLUDE("/home/mig-ly/catkin_ws/build/wifi_ddwrt/cmake_install.cmake")
+  INCLUDE("/home/mig-ly/git/catkin_ws/build/gtest/cmake_install.cmake")
+  INCLUDE("/home/mig-ly/git/catkin_ws/build/wifi_ddwrt/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
@@ -95,7 +95,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/mig-ly/catkin_ws/build/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/mig-ly/git/catkin_ws/build/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/mig-ly/catkin_ws/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/mig-ly/git/catkin_ws/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)
